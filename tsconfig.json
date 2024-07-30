@@ -1,0 +1,53 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ES2022",
+        "moduleResolution": "Bundler",
+        "sourceMap": true,
+        "strictNullChecks": false,
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "moduleDetection": "force",
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": false,
+        "incremental": true,
+        "noFallthroughCasesInSwitch": false,
+        "noImplicitAny": true,
+        "outDir": ".output",
+        "removeComments": true,
+        "resolveJsonModule": true,
+        "strictBindCallApply": false,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "alwaysStrict": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true, 
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": false,
+        "paths": {
+            "@/*": ["./*"]
+        },
+        "strictFunctionTypes":   true,
+        "strictPropertyInitialization": false,
+        "types": ["vite/client"],
+        "useUnknownInCatchVariables": true
+    },
+    "include": [
+        "./**/*.vue",
+        "./**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        ".nuxt",
+        "build",
+        ".output"
+    ],
+    "extends": "./.nuxt/tsconfig.json",
+    "files": ["./.nuxt/nuxt.d.ts"]
+}
